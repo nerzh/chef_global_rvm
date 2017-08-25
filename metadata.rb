@@ -1,5 +1,5 @@
 name 'global_rvm'
-maintainer 'The Authors'
+maintainer 'woodcrust'
 maintainer_email 'emptystamp@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures global_rvm'
@@ -18,5 +18,3 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/global_rvm'
-
-# depends 'chef_rvm', '~> 2.0.0'
