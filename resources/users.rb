@@ -10,7 +10,7 @@ property :rvm_path, String, required: true
 action :install do
   break unless rvm_exist?
 
-  users.each do |user|
+  new_resource.users.each do |user|
     next if belong_to_rvm_group?(user)
 
     ruby_block "export rvm_path #{rvm_path} to /etc/profile" do
